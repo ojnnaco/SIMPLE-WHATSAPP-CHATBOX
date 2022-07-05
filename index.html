@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ChatBox</title>
+    <link
+      rel="stylesheet"
+      <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="cointainer">
+      <!-- chat-box -->
+      <div class="chat-box">
+        <!-- client -->
+        <div class="client">
+          <img
+            class="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtAbxFvkYUe2E4qrN86PHx4khWyyR8MTon7Q&usqp=CAU"
+            alt="Logo"
+            srcset=""
+          />
+          <div class="client-info">
+            <h2>Big Joe.</h2>
+            <p>Online</p>
+          </div>
+        </div>
+
+        <!-- main chat section -->
+        <div class="chats">
+          <div class="client-chat">Hi Bro.</div>
+          <div class="my-chats">Hi Joe</div>
+          <div class="client-chat">Where have you been all these while?</div>
+          <div class="my-chats">I travelled, sorry i didn't tell you.</div>
+          <div class="client-chat">I thought as much. Be safe bro.</div>
+        </div>
+
+        <!-- input field section  -->
+        <div class="chat-input">
+          <input type="text" placeholder="Enter Message" />
+          <button class="send-btn">
+            <i class="material-icons" style="font-size: 36px">send</i>
+          </button>
+        </div>
+
+        <!-- button  -->
+        <div class="chat-button">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
